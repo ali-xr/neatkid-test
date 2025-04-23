@@ -1,0 +1,1 @@
+ /Users/alixr/StudioProjects/neatkid_test/.dart_tool/flutter_build/8616ff7a6bae6ab8fde9c71529e7fb15/dart_build_result.json: 
