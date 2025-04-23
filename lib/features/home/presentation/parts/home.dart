@@ -13,7 +13,7 @@ class MyHomePage extends StatelessWidget {
         body: ListView(
           padding: EdgeInsets.all(16),
           children: [
-            ListElement(bottom: 24,),
+            ListElement(bottom: 24),
 
             TabBar(
               labelColor: Colors.blue,
@@ -29,19 +29,7 @@ class MyHomePage extends StatelessWidget {
               child: TabBarView(
                 children: [
                   Container(color: Colors.red.shade100, alignment: Alignment.center, child: Text("TabBarView 1")),
-                  Column(
-                    children: [
-                      Expanded(
-                        child: Container(
-                          color: Colors.green.shade100,
-                          alignment: Alignment.center,
-                          child: Text("TabBarView 2"),
-                        ),
-                      ),
-                      SizedBox(height: 24),
-                      ListElement(bottom: 10,),
-                    ],
-                  ),
+                  Container(color: Colors.green.shade100, alignment: Alignment.center, child: Text("TabBarView 2")),
                   Container(color: Colors.blue.shade100, alignment: Alignment.center, child: Text("TabBarView 3")),
                 ],
               ),
@@ -52,7 +40,7 @@ class MyHomePage extends StatelessWidget {
               shrinkWrap: true,
               itemCount: 20,
               itemBuilder: (context, index) {
-                return ListElement(bottom: 8,);
+                return ListElement(bottom: 8);
               },
             ),
           ],
